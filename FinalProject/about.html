@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>About us</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+    <header>
+        <div class="header_bg">
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""> </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <a class="navbar-brand" href="index.html">
+                                <span>
+                                    SPA Luxe
+                                </span>
+                            </a>
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About <span
+                                        class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="price.html">Prices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="promotions.html">Promotions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row d_flex">
+            <div class="col-md-8">
+                <div class="quality_box">
+                    <figure><img src="images/5.jpg" alt="#" /></figure>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="quality_text">
+                    <h3>About us</h3>
+                    <p>SPA Luxe redefines relaxation with a fusion of opulence and holistic well-being. Our sanctuary
+                        offers bespoke spa treatments designed to invigorate your senses. From soothing massages to
+                        specialized skincare and revitalizing therapies, each experience is a harmonious blend of luxury
+                        and wellness. Our expert therapists and serene ambiance ensure a transformative escape, allowing
+                        you to immerse in tranquility and emerge rejuvenated, embracing a lifestyle of self-care.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d_flex">
+            <div class="col-md-8">
+                <div class="quality_box">
+                    <figure><img src="images/1.jpg" alt="#" /></figure>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="quality_text">
+                    <h3>Our Story</h3>
+                    <p>
+                        "SPA Luxe" founded by visionary entrepreneur Olivia, emerged in the heart of a
+                        bustling city as a sanctuary dedicated to holistic well-being and inner peace. Olivia's
+                        transformative spa experience inspired her to create an oasis of tranquility, offering not only
+                        massages and facials but a complete wellness experience, fostering sustainability and leaving an
+                        indelible impact on individuals seeking solace and rejuvenation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2023 All Rights Reserved by Daniyar & Nurbakyt <a href="https://html.design/"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $('.content').hide();
+
+        $('.slider').click(function () {
+            $(this).next('.content').slideToggle();
+            this.toggle = !this.toggle;
+            $(this).children("span").text(this.toggle ? "-" : "+");
+            return false;
+        });
+    </script>
+</body>
+
+</html>
